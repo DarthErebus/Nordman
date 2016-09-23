@@ -3,3 +3,4 @@
 public/.DS_Store
 .powder
 .git/
+node_modules/
