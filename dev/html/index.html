@@ -1,97 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Nordman Excavating</title>
-    <link rel="stylesheet" href="css/index.css">
-    <meta name="viewport" content="width=device-width">
-  </head>
-  <body>
-    <main>
+@@include('partials/header.html', {
+  "page-class": "home"
+})
 
 
-    <header id="top" class="main-header">
-      <span class="title">Quality and Excellence since 1998</span>
-      <h1>Nordman Excavating</h1>
-      <img class="arrow" src="img/arrow.in.svg" alt="Down arrow">
-    </header>
+<main>
 
-		<div class="primary-content t-border">
-			<p class="intro">
-				Nordman Excavating gives septic system installations, general excavation and demolition services for private and business clients in Northern Illinois since 1998. Our licensed and insured experts have guaranteed proper installation and clean waste procedures for homes and businesses alike. We're your septic system specialists who never compromise quality for quantity. When we arrive, we're committed completely to you. We'll take as much time as needed  to guarantee your full satisfaction. Our family-owned and operated business takes care of the entire project from start to finish, so you don't have to.
-			</p>
-			<a class="callout" href="about.html">Who We Are</a>
 
-      <div class="services">
-        <h2>FREE Estimates</h2>
-        <p>
-          We offer hourly rates or give estimates for projects big and small.
-        </p>
-      </div>
+  <header id="top" class="main-header">
+    <span class="title">Quality and Excellence since 1998</span>
+    <h1>Nordman Excavating</h1>
+    <img class="arrow" src="img/arrow.in.svg" alt="Down arrow">
+  </header>
 
-			<a class="callout" href="#services">What We Do</a>
-		</div>
+  <div class="primary-content t-border">
+    <p class="intro">
+      Nordman Excavating gives septic system installations, general excavation and demolition services for private and business clients in Northern Illinois since 1998. Our licensed and insured experts have guaranteed proper installation and clean waste procedures for homes and businesses alike. We're your septic system specialists who never compromise quality for quantity. When we arrive, we're committed completely to you. We'll take as much time as needed  to guarantee your full satisfaction. Our family-owned and operated business takes care of the entire project from start to finish, so you don't have to.
+    </p>
+    <a class="callout" href="about.html">Who We Are</a>
 
-		<div class="secondary-content t-border group">
-      <div class="homeex">
-        <img src="img/siteprep.jpg" alt="HomeEx">
-        <h3>Home Excavation</h3>
-        <p>
+    <div class="services">
+      <h2>FREE Estimates</h2>
+      <p>
+        We offer hourly rates or give estimates for projects big and small.
+      </p>
+    </div>
+
+    <a class="callout" href="#services">What We Do</a>
+  </div>
+
+  <div class="secondary-content t-border group">
+    <div class="homeex">
+      <img src="img/siteprep.jpg" alt="HomeEx">
+      <h3>Home Excavation</h3>
+      <p>
         We are also qualified experts with 18 years of experience for your residential needs.  We offer a wide range of services to fit your home excavation needs.
-        </p>
-        <ol>
-          <li>Black Dirt Installation</li>
-          <li>Gravel Hauling</li>
-          <li>Site Preparation</li>
-          <li>Land Clearing</li>
-          <li>Septic Systems</li>
-          <li>Driveways</li>
-          <li>Waterways/Ponds</li>
-        </ol>
-      </div>
-
-      <div class="general">
-        <img src="img/demo.jpg" alt="General Contracting">
-        <h3>General Contracting</h3>
-        <p>
-         Our Family-Owned and operated business takes care of all your general contracting needs.  From demolition work to trench digging, we do it all.
-        </p>
-        <ol>
-          <li>Trench Digging</li>
-          <li>Waterproofing</li>
-          <li>Demolition Work</li>
-          <li>Trucking</li>
-          <li>Farming</li>
-          <li>Dragline Work</li>
-          <li>Land Clearing</li>
-        </ol>
-      </div>
-		</div>
-    </main>
-
-<div class="footer_container">
-    <div class="container">
-        <strong>Nordman Excavating</strong>
-        <ul>
-            <li>1431 Rt 64 E</li>
-            <li>Tel: 815-732-7255</li>
-            <li>Oregon, IL 61061</li>
-            <li>Mail: nordmanexc@frontier.com</li>
-        </ul>
+      </p>
+      <ol>
+        <li>Black Dirt Installation</li>
+        <li>Gravel Hauling</li>
+        <li>Site Preparation</li>
+        <li>Land Clearing</li>
+        <li>Septic Systems</li>
+        <li>Driveways</li>
+        <li>Waterways/Ponds</li>
+      </ol>
     </div>
-    <div class="container">
-        <strong>Links</strong>
-        <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="about.html"><li>About Us</li></a>
-            <a href="services.html"><li>Services</li></a>
-            <a href="contact.html"><li>Contact Us</li></a>
-        </ul>
-        <div class="fb">
-            <a href="www.facebook.com/nordmanexcavating"><img src="img/fb.png"></a>
+
+    <div class="general">
+      <img src="img/demo.jpg" alt="General Contracting">
+      <h3>General Contracting</h3>
+      <p>
+        Our Family-Owned and operated business takes care of all your general contracting needs.  From demolition work to trench digging, we do it all.
+      </p>
+      <ol>
+        <li>Trench Digging</li>
+        <li>Waterproofing</li>
+        <li>Demolition Work</li>
+        <li>Trucking</li>
+        <li>Farming</li>
+        <li>Dragline Work</li>
+        <li>Land Clearing</li>
+      </ol>
     </div>
-</div>​
-    <script src="js/application-vendor.js"></script>
-    <script src="js/application.js"></script>
-  </body>
-</html><!doctype html>
+  </div>
+</main>
+<!-- Moved the footer to a partial so it can be referenced in every page -->
+@@include('partials/footer.html')
